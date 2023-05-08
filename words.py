@@ -1,0 +1,22 @@
+backup_word_list = [
+    'congratulate',
+    'triumph',
+    'special',
+    'pushes',
+    'orange',
+    'prevent',
+    'opening',
+    'systems',
+    'obliterate',
+    'culture',
+    'computing',
+    'programme',
+    'beginning',
+    'populate',
+    'entertain',
+    'transform',
+    'apologetic',
+    'enormous',
+    'competitive',
+    'imagine'
+]
