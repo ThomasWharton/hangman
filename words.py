@@ -1,14 +1,16 @@
 import requests
+import random
 
-def get_words():
+def get_word():
     """
-    Fetches a list of words from api.
+    Fetches a list of words from api and picks random word from it.
     If fetch from api unsuccessful, uses backup list.
     """
     try:
         response = requests.get('https://random-word-api.herokuapp.com/word?number=100')
-        word_list = response.json()
-        return word_list
+        word_list = response.json()#
+        word = random.choice(word_list).upper() 
+        return word
     except:
         word_list = [
         'congratulate',
@@ -32,6 +34,7 @@ def get_words():
         'competitive',
         'imagine'
         ]
-        return word_list
+        word = random.choice(word_list).upper() 
+        return word
 
 

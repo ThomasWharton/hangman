@@ -1,5 +1,5 @@
 def display_hangman(lives):
-    stages = ["""
+   stages = [ """
                  ============
                  |          |
                  |          O
@@ -68,5 +68,5 @@ def display_hangman(lives):
                  |         
                  |
                  ========
-              """
-]
+              """]
+   return stages[lives]
