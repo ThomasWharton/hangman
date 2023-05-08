@@ -1,32 +1,57 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman
+Hangman is a Python terminal game, which is run in the Code Institute mock terminal and hosted on Heroku.
 
-Welcome,
+Users will be asked to guess a random word by typing in letters or words. The challenge is to guess the word before the poor man is hanged.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+## How to play
+Firstly, the user will be asked for their name and once submitted, the game will begin.
 
-## Reminders
+The user will be given a random word with each letter being represented by the **_** symbol. This will give the user the total length of the word.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+They will then be prompted to input a letter or a word as their guess.
 
-## Creating the Heroku app
+Letters guessed must be from within the standard English alphabet. Guessed words must be the same length as the randomly generated word and only contain characters from the standard English alphabet.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+For each correct letter guessed, the **_** symbols will be replaced with the correctly guessed letter. For each incorrect guess (letter or word), the user will lose a life and the man will move one step closer to being hanged.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+If the user correctly guesses the word, they will be presented with a congratulatory message and asked if they would like to play again.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+If the user runs out of lives, the man will unfortunately be hanged, the user will be presente with a commiseratory message and asked if they would like to play again.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+The user will be warned if they have already guessed a letter and told to guess again. This will not result in the loss of a life.
 
-Connect your GitHub repository and deploy as normal.
+## Features
 
-## Constraints
+### Welcome Message
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+Upon loading, the user will be presented with a welcome message, detailing the game and how to begin.
 
----
+### Username Prompt
 
-Happy coding!
+The user will be prompted to submit a username and once provided, the game will begin.
+
+### Hangman Gallows
+
+Once the game begins, the empty gallows will be displayed and updated with each incorrect guess. Once the user is out of tries, the fully hanged man will be displayed.
+
+### Word
+
+A random word will be selected from an API or if unsuccessful in loading from the API, a word will be selected from a prewritten backup list.
+
+The word will be displayed with each letter represented by the **_** symbol. With each correct letter guess, the correctly guessed letter(s) will then replace the underscore at the correct position in the word. 
+
+### List of incorrect letters
+
+The user will be presented a list of their already guessed letters which were incorrect. This will allow the user to keep track of what they have already tried.
+
+### List of incorrect words
+
+If the user incorrectly guesses a word, this word will be added to a list of incorrect word guesses and displayed for the user.
+
+### Play again
+
+Once the game is complete, whether that resulted in a win or a loss for the user, a prompt will appear for the user to start again by typing either y for yes and n for no.
+
+
+
+
