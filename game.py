@@ -29,7 +29,8 @@ def start_game(word):
                 word_as_list = list(word_completion)
                 indices = [i for i, letter in enumerate(word) if letter == guess]
                 for index in indices:
-                    word_as_list[index] = "".join(word_as_list)
+                    word_as_list[index] = guess
+                word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
                     guessed_correctly = True
 
@@ -46,8 +47,14 @@ def start_game(word):
 
         else:
             print("Your guess is not valid. Please try again.")
-            print(display_hangman(lives))
-            print(word_completion)
-            print("\n")
+        print(display_hangman(lives))
+        print(word_completion)
+        print("\n")
+    
+    if guessed_correctly:
+        print("Congratulations! You guessed the word correctly and saved this poor man's life!")
+    else:
+        print(f"Commiserations! You ran out of lives and the poor man has been hanged! The word was {word}!")
+
 
 start_game(word)
