@@ -11,8 +11,7 @@ def start_game(word):
     lives = 6
     print("Hey name, lets play a game of Hangman!\n")
     print(display_hangman(lives))
-    print(word_completion)
-    print("\n")
+    print(word_completion, "\n")
 
     while not guessed_correctly and lives > 0:
         guess = input("Guess a letter or a word: ").upper()
@@ -48,11 +47,9 @@ def start_game(word):
         else:
             print("Your guess is not valid. Please try again.")
         print(display_hangman(lives))
-        print(word_completion)
-        print("\n")
+        print(word_completion, "\n")
         print(f"Letters guessed: {letters_guessed}")
-        print(f"Words guessed: {words_guessed}")
-        print("\n")
+        print(f"Words guessed: {words_guessed}", "\n")
     
     if guessed_correctly:
         print("Congratulations! You guessed the word correctly and saved this poor man's life!")
