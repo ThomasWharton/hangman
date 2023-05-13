@@ -50,6 +50,9 @@ def start_game(word):
         print(display_hangman(lives))
         print(word_completion)
         print("\n")
+        print(f"Letters guessed: {letters_guessed}")
+        print(f"Words guessed: {words_guessed}")
+        print("\n")
     
     if guessed_correctly:
         print("Congratulations! You guessed the word correctly and saved this poor man's life!")

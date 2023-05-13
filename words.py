@@ -7,7 +7,7 @@ def get_word():
     If fetch from api unsuccessful, uses backup list.
     """
     try:
-        response = requests.get('https://andom-word-api.herokuapp.com/word?number=100')
+        response = requests.get('https://random-word-api.herokuapp.com/word?number=100')
         word_list = response.json()#
         word = random.choice(word_list).upper() 
         return word
