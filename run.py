@@ -1,3 +1,4 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+from src/utilities/welcome import welcome
+from src/utilities/words import get_word
+from src/utilities/display import display_hangman
+from src/game import start_game
