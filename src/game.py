@@ -15,6 +15,7 @@ def start_game(word):
     words_guessed = []
     lives = 6
     print(display_hangman(lives))
+    print(f"The word is {len(word)} characters long.\n")
     print(word_completion, "\n")
 
     while not guessed_correctly and lives > 0:
