@@ -19,7 +19,7 @@ def welcome():
     )
     
     while not accepted_username:
-        print("Username must be between 1 and 10 characters and only contain letters from the English Alphabet.")
+        print("Username must be between 1 and 10 characters\n and only contain letters from the English Alphabet.")
         username = input("Please enter a username: ")
 
         if len(username) in range(1,11) and username.isalpha():
