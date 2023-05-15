@@ -1,4 +1,8 @@
 def welcome():
+    """
+    Prints welcome message and asks for user to input name.
+    Return username when input is valid.
+    """
     accepted_username = False
     print(
         """
