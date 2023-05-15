@@ -1,5 +1,4 @@
-from src.utilities.display import display_hangman
-from src.utilities.words import get_word
+import src
 
 def restart_game():
     """
@@ -10,7 +9,7 @@ def restart_game():
     while not input_valid:
         restart = input("Play again? (Y/N): ").upper()
         if restart[0] == "Y":
-            word = get_word()
+            word = src.get_word()
             start_game(word)
             input_valid = True
         elif restart[0] == "N":
@@ -25,13 +24,14 @@ def start_game(word):
     Updates word completion if correct.
     Adds guessed letters/words to lists and displays for user.
     Prints different message depending on whether user wins or loses.
+    Once game is over, calls restart_game function.
     """
     word_completion = "_" * len(word)
     guessed_correctly = False
     letters_guessed = []
     words_guessed = []
     lives = 6
-    print(display_hangman(lives))
+    print(src.display_hangman(lives))
     print(f"The word is {len(word)} characters long.\n")
     print(word_completion, "\n")
 
@@ -69,7 +69,7 @@ def start_game(word):
         else:
             print("Your guess is not valid. Please try again.")
 
-        print(display_hangman(lives))
+        print(src.display_hangman(lives))
         print(f"The word is {len(word)} characters long.\n")
         print(word_completion, "\n")
         print(f"Letters guessed: {letters_guessed}")
