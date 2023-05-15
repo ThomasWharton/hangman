@@ -8,7 +8,7 @@ def get_word():
     """
     try:
         response = requests.get('https://random-word-api.herokuapp.com/word?number=100')
-        word_list = response.json()#
+        word_list = response.json()
         word = random.choice(word_list).upper() 
         return word
     except:
