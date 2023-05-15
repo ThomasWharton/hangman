@@ -1,4 +1,8 @@
 def display_hangman(lives):
+   """
+   Takes argument of lives.
+   Return stage index == lives.
+   """
    stages = [ """
                  ============
                  |          |
