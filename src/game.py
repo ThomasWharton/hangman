@@ -1,7 +1,7 @@
 from words import get_word
 from display import display_hangman
 
-word = get_word()
+# word = get_word()
 
 def start_game(word):
     word_completion = "_" * len(word)
@@ -9,7 +9,7 @@ def start_game(word):
     letters_guessed = []
     words_guessed = []
     lives = 6
-    print("Hey name, lets play a game of Hangman!\n")
+    # print("Hey name, lets play a game of Hangman!\n")
     print(display_hangman(lives))
     print(word_completion, "\n")
 
@@ -55,6 +55,3 @@ def start_game(word):
         print("Congratulations! You guessed the word correctly and saved this poor man's life!")
     else:
         print(f"Commiserations! You ran out of lives and the poor man has been hanged! The word was {word}!")
-
-
-start_game(word)
