@@ -2,6 +2,13 @@ from src.utilities.display import display_hangman
 
 
 def start_game(word):
+    """
+    Takes argument word and starts loop for user to enter guesses.
+    Checks guess is valid and whether or not it is correct.
+    Updates word completion if correct.
+    Adds guessed letters/words to lists and displays for user.
+    Prints different message depending on whether user wins or loses.
+    """
     word_completion = "_" * len(word)
     guessed_correctly = False
     letters_guessed = []
@@ -50,6 +57,6 @@ def start_game(word):
         print(f"Words guessed: {words_guessed}", "\n")
     
     if guessed_correctly:
-        print("Congratulations! You guessed the word correctly and saved this poor man's life!")
+        print("Congratulations! You guessed the word correctly and saved this poor man's life!\n")
     else:
-        print(f"Commiserations! You ran out of lives and the poor man has been hanged! The word was {word}!")
+        print(f"Commiserations! You ran out of lives and the poor man has been hanged!\nThe word was {word}!\n")
