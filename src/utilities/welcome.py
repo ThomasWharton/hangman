@@ -30,4 +30,4 @@ def welcome():
             accepted_username = True
             return username
         else:
-            print("The username entered does not meet requirements. Please try again.")
+            print("The username entered does not meet requirements. Please try again.\n")
