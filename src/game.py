@@ -1,5 +1,5 @@
-from words import get_word
-from display import display_hangman
+# from words import get_word
+from src.utilities.display import display_hangman
 
 # word = get_word()
 
