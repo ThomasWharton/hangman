@@ -1,5 +1,6 @@
 import src
 
+
 def restart_game():
     """
     Creates input to ask user if they would like to play again.
@@ -16,6 +17,7 @@ def restart_game():
             exit()
         else:
             print("Input is invalid.\nPlease enter Y for yes and N for no.")
+
 
 def start_game(word):
     """
@@ -41,11 +43,11 @@ def start_game(word):
             if guess in letters_guessed:
                 print(f"Sorry! You already guessed the letter {guess}. Please try again.")
             elif guess not in word:
-                print (f"Unlucky! {guess} is not in the word.")
+                print(f"Unlucky! {guess} is not in the word.")
                 lives -= 1
                 letters_guessed.append(guess)
             else:
-                print (f"Well Done! {guess} is in the word")
+                print(f"Well Done! {guess} is in the word")
                 letters_guessed.append(guess)
                 word_as_list = list(word_completion)
                 indices = [i for i, letter in enumerate(word) if letter == guess]
@@ -74,13 +76,12 @@ def start_game(word):
         print(word_completion, "\n")
         print(f"Letters guessed: {letters_guessed}")
         print(f"Words guessed: {words_guessed}", "\n")
-    
+
     if guessed_correctly:
         print("Congratulations! You guessed the word correctly and saved this poor man's life!\n")
     else:
         print(f"Commiserations! You ran out of lives and the poor man has been hanged!\nThe word was {word}!\n")
-    
-    restart_game()
 
+    restart_game()
 
     
