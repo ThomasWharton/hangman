@@ -13,7 +13,7 @@ def welcome():
         ||For every incorrect guess,                                     ||
         ||you will lose a life and the man will be one step closer       ||
         ||to his demise!                                                 ||
-        ||Guesses must be made up of letters contained in the standard   || 
+        ||Guesses must be made up of letters contained in the standard   ||
         ||English alphabet.                                              ||
         ||If guessing a word, it must be of equal length to the chosen   ||
         ||word.                                                          ||
@@ -21,12 +21,12 @@ def welcome():
         ===================================================================
         """
     )
-    
+
     while not accepted_username:
         print("Username must be between 1 and 10 characters\nand only contain letters from the English Alphabet.\n")
         username = input("Please enter a username: ")
 
-        if len(username) in range(1,11) and username.isalpha():
+        if len(username) in range(1, 11) and username.isalpha():
             accepted_username = True
             return username
         else:
