@@ -83,5 +83,3 @@ def start_game(word):
         print(f"Commiserations! You ran out of lives and the poor man has been hanged!\nThe word was {word}!\n")
 
     restart_game()
-
-    
