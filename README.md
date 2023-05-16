@@ -18,7 +18,7 @@ For each correct letter guessed, the **_** symbols will be replaced with the cor
 
 If the user correctly guesses the word, they will be presented with a congratulatory message and asked if they would like to play again.
 
-If the user runs out of lives, the man will unfortunately be hanged, the user will be presente with a commiseratory message and asked if they would like to play again.
+If the user runs out of lives, the man will unfortunately be hanged, the user will be presented with a commiseratory message and asked if they would like to play again.
 
 The user will be warned if they have already guessed a letter and told to guess again. This will not result in the loss of a life.
 
@@ -92,7 +92,7 @@ The user will receive either a congratulatory or commiseratory message depending
 
 ### Play again
 
-Once the game is complete, whether that resulted in a win or a loss for the user, a prompt will appear for the user to start again by typing either y for yes and n for no. If the user inputs a character other than Y or N, a validation error will occur. The user can also submit a lowercase Y or N and yes or no as validation is done by splicing the first letter and converting to uppercase.
+Once the game is complete, whether that resulted in a win or a loss for the user, a prompt will appear for the user to start again by typing either Y for yes and N for no. If the user inputs a character other than Y or N, a validation error will occur. The user can also submit a lowercase Y or N and yes or no as validation is done by splicing the first letter and converting to uppercase.
 
 *Play Again Validation*<br>
 ![Play Again Validation](docs/screenshots/play_again_validation.png)
