@@ -1,25 +1,15 @@
 def display_hangman(lives):
-   """
-   Takes argument of lives.
-   Return stage index == lives.
-   """
-   stages = [ """
+    """
+    Takes argument of lives.
+    Return stage index == lives.
+    """
+    stages = ["""
                  ============
                  |          |
                  |          O
                  |         \\|/
                  |          |
-                 |         / \\ 
-                 |
-                 ========
-              """,
-              """
-                 ============
-                 |          |
-                 |          O
-                 |         \\|/
-                 |          |
-                 |         /  
+                 |         / \\
                  |
                  ========
               """,
@@ -29,7 +19,7 @@ def display_hangman(lives):
                  |          O
                  |         \\|/
                  |          |
-                 |          
+                 |         /
                  |
                  ========
               """,
@@ -37,9 +27,19 @@ def display_hangman(lives):
                  ============
                  |          |
                  |          O
-                 |         \|
+                 |         \\|/
                  |          |
-                 |         
+                 |
+                 |
+                 ========
+              """,
+              """
+                 ============
+                 |          |
+                 |          O
+                 |         \\|
+                 |          |
+                 |
                  |
                  ========
               """,
@@ -49,7 +49,7 @@ def display_hangman(lives):
                  |          O
                  |          |
                  |          |
-                 |          
+                 |
                  |
                  ========
               """,
@@ -57,20 +57,20 @@ def display_hangman(lives):
                  ============
                  |          |
                  |          O
-                 |         
-                 |          
-                 |          
+                 |
+                 |
+                 |
                  |
                  ========
               """,
               """
                  ============
                  |          |
-                 |          
-                 |         
-                 |          
-                 |         
+                 |
+                 |
+                 |
+                 |
                  |
                  ========
               """]
-   return stages[lives]
+    return stages[lives]
