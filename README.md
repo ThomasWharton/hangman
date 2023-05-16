@@ -3,6 +3,8 @@ Hangman is a Python terminal game, which is run in the Code Institute mock termi
 
 Users will be asked to guess a random word by typing in letters or words. The challenge is to guess the word before the poor man is hanged.
 
+![Responsive Mockup](docs/screenshots/amiresponsive.png)
+
 ## How to play
 Firstly, the user will be asked for their name and once submitted, the game will begin.
 
@@ -25,6 +27,8 @@ The user will be warned if they have already guessed a letter and told to guess 
 ### Welcome Message
 
 Upon loading, the user will be presented with a welcome message, detailing the game and how to begin.
+
+![Welcome Message](docs/screenshots/welcome.png)
 
 ### Username Prompt
 
