@@ -145,3 +145,19 @@ to have a limit of 79 characters to not impede readability of your code.
 
 *words.py Validation*<br>
 ![words.py Validation](docs/screenshots/words-file-validation.png)
+
+### Bugs
+
+#### Solved Bugs
+
+Initially the **restart_game** function was defined in a file of its own and called within the **main** function in **run.py**. The restart function worked correctly the first time and restarted the game if the user chose to, however it would not be called again after completing the game a second time. Trying to call the function by importing it into the game.py file created an import loop as the function calls the **start_game** function within it, therefore needing to import the **start_game** function into the restart file. After some testing, it was decided it would be defined within **game.py** so that it could be called at the end of the **start_game** function. This fixed the issue as it would always be called upon game completion and removes the possibility of an import loop.
+
+#### Remaining Bugs
+No bugs remaining.
+
+## Deployment
+
+## Credits
+
+I would like to thank my mentor [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin") for his continued support throughout the course.
+
