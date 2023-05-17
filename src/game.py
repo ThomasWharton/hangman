@@ -21,12 +21,7 @@ def restart_game():
 
 def start_game(word):
     """
-    Takes argument word and starts loop for user to enter guesses.
-    Checks guess is valid and whether or not it is correct.
-    Updates word completion if correct.
-    Adds guessed letters/words to lists and displays for user.
-    Prints different message depending on whether user wins or loses.
-    Once game is over, calls restart_game function.
+    Start game and ask user for input.
     """
     word_completion = "_" * len(word)
     guessed_correctly = False
