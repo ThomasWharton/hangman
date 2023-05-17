@@ -12,7 +12,7 @@ def get_word():
         word_list = response.json()
         word = random.choice(word_list).upper()
         return word
-    except api_call_failure:
+    except requests.HTTPError:
         word_list = [
             'congratulate',
             'triumph',
