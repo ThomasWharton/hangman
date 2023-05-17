@@ -157,6 +157,52 @@ No bugs remaining.
 
 ## Deployment
 
+This project was deployed using [Heroku](https://www.heroku.com "Heroku") by the following the steps detailed below.
+
+### Heruko Deployment
+
+#### Initial Project Creation
+
+1. Navigate to Heruko website and sign up or log in.
+2. Navigate to your dashboard, select **New** and then **Create New App**.
+3. Assign a unique name to your project, select your region and click **Create app**.
+4. Navigate to **Settings** tab.
+5. In order to use the CodeInstitute mock terminal template, a config var must be added. This is done by clicking on **Reveal Config Vars**, inputting **PORT** for the key and **8000** for the value.
+6. Click **Add Buildpack** and add packs **Python** and **NodeJS** in that order. If done correctly **Python** should be first (top) and **NodeJS** second (bottom).
+
+#### Deploying a Github Repository
+
+1. Navigate to **Deploy** tab.
+2. Select **GitHub - Connect** for deployment method and connect your GitHub account by logging in with your GitHub details in the prompt.
+3. Select your GitHub account from the dropdown list if not already preselected.
+4. Search for your GitHub repository that you would like to deploy and click **Connect** on the respository in the search list.
+5. Deployment options are found further down the **Deploy** tab with options for **Automatic Deploys** and **Manual Deploy**. Automatic deploys all for heruko to update your app everytime your GitHub is updated.
+6. Choose your deployment option and the branch from which you would like to deploy.
+7. If **Automatic deploys** is chosen, click on **Enable Automatic Deploys**. If **Manual deploy** chosen, click on **Deploy Branch**.
+8. Heruko should now start the deployment process. Once successfully deployed, a message will appear saying **Your app was successfully deployed.** with a button to view your deployed application.
+
+### GitHub
+
+#### Forking GitHub Repository
+
+Forking allows you to make a copy of a chosen repository to your own GitHub account. This allows you to test and edit the project without making changes to the original. Forking is done by following these steps.
+
+1. Whilst logged into your GitHub account, navigate to the repository you would like to fork.
+2. Click on the **Fork** button at the top right of the page.
+3. Choose a name to give the repository. It will be intially named as the same as the original repository.
+4. Click the **Create Fork** button.
+
+#### Cloning GitHub Repository
+
+Cloning allows you to download a local version of a chosen repository. Cloning can be done by following these steps.
+
+1. Whilst logged into your GitHub account, navigate to the repository you would like to clone.
+2. Click the green **<> Code** button.
+3. Click on the **Local** tab.
+4. Select **HTTPS** and copy the url.
+5. Open your chosen IDE and ensure Git is installed.
+5. In your IDE terminal type **git clone (url link that you copied)** and hit enter.
+
 ## Credits
 
 I would like to thank my mentor [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin") for his continued support throughout the course.
