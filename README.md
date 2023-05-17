@@ -210,5 +210,7 @@ Cloning allows you to download a local version of a chosen repository. Cloning c
 
 ## Credits
 
+API used for word list, from [random-word-api](http://random-word-api.herokuapp.com/home "random-word-api").
+
 I would like to thank my mentor [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin") for his continued support throughout the course.
 
