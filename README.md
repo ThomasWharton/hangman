@@ -22,6 +22,12 @@ If the user runs out of lives, the man will unfortunately be hanged, the user wi
 
 The user will be warned if they have already guessed a letter and told to guess again. This will not result in the loss of a life.
 
+## Application Logic
+
+A flowchart outlining the application logic was created using [draw.io](https://app.diagrams.net/ "draw.io"). The flowchart can be viewed by clicking the link below.
+
+[Logic flowchart](docs/flowchart/logic.drawio.png)
+
 ## Features
 
 ### Welcome Message
