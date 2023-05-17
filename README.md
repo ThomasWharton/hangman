@@ -203,6 +203,11 @@ Cloning allows you to download a local version of a chosen repository. Cloning c
 5. Open your chosen IDE and ensure Git is installed.
 5. In your IDE terminal type **git clone (url link that you copied)** and hit enter.
 
+## Libraries Used
+
+* The **requests** library was imported to allow for use of API to fetch list of words.
+* The **random** library was imported to randomise the word selection from the list of words.
+
 ## Credits
 
 I would like to thank my mentor [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin") for his continued support throughout the course.
