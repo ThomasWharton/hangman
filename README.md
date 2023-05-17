@@ -4,6 +4,36 @@ Hangman is a Python terminal game, which is run in the Code Institute mock termi
 Users will be asked to guess a random word by typing in letters or words. The challenge is to guess the word before the poor man is hanged.
 
 ![Responsive Mockup](docs/screenshots/amiresponsive.png)
+[View live project here.](https://hangman-tw.herokuapp.com/)
+
+## Table of Contents
+
+- [How to play](#how-to-play)
+- [Application Logic](#application-logic)
+- [Features](#features)
+  * [Welcome Message](#welcome-message)
+  * [Username Prompt](#username-prompt)
+  * [Hangman Gallows](#hangman-gallows)
+  * [Word](#word)
+  * [List of guessed letters](#list-of-guessed-letters)
+  * [List of guessed words](#list-of-guessed-words)
+  * [Guess Validation](#guess-validation)
+  * [Completion Message](#completion-message)
+  * [Play again](#play-again)
+- [Testing](#testing)
+  * [Validator Testing](#validator-testing)
+  * [Bugs](#bugs)
+    + [Solved Bugs](#solved-bugs)
+    + [Remaining Bugs](#remaining-bugs)
+- [Deployment](#deployment)
+  * [Heruko Deployment](#heruko-deployment)
+    + [Initial Project Creation](#initial-project-creation)
+    + [Deploying a Github Repository](#deploying-a-github-repository)
+  * [GitHub](#github)
+    + [Forking GitHub Repository](#forking-github-repository)
+    + [Cloning GitHub Repository](#cloning-github-repository)
+- [Libraries Used](#libraries-used)
+- [Credits](#credits)
 
 ## How to play
 Firstly, the user will be asked for their name and once submitted, the game will begin.
@@ -109,7 +139,7 @@ Thorough testing has been completed throughout the project's development. Upon c
 
 | Feature Tested        | Feature Description                                                                                                           | Testing Completed                                                                                                                              | Expected Outcome                                                                                                                                                                                                                                                                                      | Result       |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Welcome Message       | Welcome message and username <br>input field displayed.                                                                       | Run program.                                                                                                                                   | Welcome message and username<br>should be displayed.                                                                                                                                                                                                                                                  | As expected. |
+| Welcome Message       | Welcome message and username <br>input field displayed.                                                                       | Run program.                                                                                                                                   | Welcome message and username<br>input field should be displayed.                                                                                                                                                                                                                                                  | As expected. |
 | Username Input        | User can input username adhering<br>to requirements.                                                                          | Input invalid and valid<br>username.                                                                                                           | Upon invalid username input,<br>user will be notified that it<br>is not valid and to try again.<br>Upon valid input, game will start.                                                                                                                                                                 | As expected. |
 | Get Word              | Random word pulled from API list<br>or backup list.                                                                           | Fetch word from API and<br>from backup list. Tested via<br>printing fetched word. To test<br>backup list, API URL was made to<br>be incorrect. | Word should be selected at random from<br>API fetched list or from backup list if<br>API fetch fails.                                                                                                                                                                                                 | As expected. |
 | Start Game Message    | Message appears at game start with<br>given username.                                                                         | Input username to initiate game<br>start.                                                                                                      | Message should appear at game start<br>which includes username given by user.                                                                                                                                                                                                                         | As expected. |
@@ -219,4 +249,6 @@ Cloning allows you to download a local version of a chosen repository. Cloning c
 API used for word list, from [random-word-api](http://random-word-api.herokuapp.com/home "random-word-api").
 
 I would like to thank my mentor [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin") for his continued support throughout the course.
+
+I would also like to thank my father-in-law Joe, for testing and feedback.
 
