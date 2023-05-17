@@ -157,7 +157,7 @@ No bugs remaining.
 
 ## Deployment
 
-This project was deployed using [Heroku](https://www.heroku.com "Heroku") by the following the steps detailed below.
+This project was deployed using [Heroku](https://www.heroku.com "Heroku") by following the steps detailed below.
 
 ### Heruko Deployment
 
