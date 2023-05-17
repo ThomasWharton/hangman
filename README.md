@@ -186,38 +186,14 @@ to have a limit of 79 characters to not impede readability of your code.
 
 #### Solved Bugs
 
-Initially the **restart_game** function was defined in a file of its own and called within the **main** function in **run.py**. The restart function worked correctly the first time and restarted the game if the user chose to, however it would not be called again after completing the game a second time. Trying to call the function by importing it into the game.py file created an import loop as the function calls the **start_game** function within it, therefore needing to import the **start_game** function into the restart file. After some testing, it was decided it would be defined within **game.py** so that it could be called at the end of the **start_game** function. This fixed the issue as it would always be called upon game completion and removes the possibility of an import loop.
+Initially the `restart_game` function was defined in a file of its own and called within the `main` function in `run.py`. The restart function worked correctly the first time and restarted the game if the user chose to, however it would not be called again after completing the game a second time. Trying to call the function by importing it into the game.py file created an import loop as the function calls the `start_game` function within it, therefore needing to import `start_game` into the restart file. After some testing, it was decided it would be defined within `game.py` so that it could be called at the end of `start_game`. This fixed the issue as it would always be called upon game completion and removes the possibility of an import loop.
 
 #### Remaining Bugs
 No bugs remaining.
 
-## Deployment
+## Development and Deployment
 
-This project was deployed using [Heroku](https://www.heroku.com "Heroku") by following the steps detailed below.
-
-### Heruko Deployment
-
-#### Initial Project Creation
-
-1. Navigate to Heruko website and sign up or log in.
-2. Navigate to your dashboard, select **New** and then **Create New App**.
-3. Assign a unique name to your project, select your region and click **Create app**.
-4. Navigate to **Settings** tab.
-5. In order to use the CodeInstitute mock terminal template, a config var must be added. This is done by clicking on **Reveal Config Vars**, inputting **PORT** for the key and **8000** for the value.
-6. Click **Add Buildpack** and add packs **Python** and **NodeJS** in that order. If done correctly **Python** should be first (top) and **NodeJS** second (bottom).
-
-#### Deploying a Github Repository
-
-1. Navigate to **Deploy** tab.
-2. Select **GitHub - Connect** for deployment method and connect your GitHub account by logging in with your GitHub details in the prompt.
-3. Select your GitHub account from the dropdown list if not already preselected.
-4. Search for your GitHub repository that you would like to deploy and click **Connect** on the respository in the search list.
-5. Deployment options are found further down the **Deploy** tab with options for **Automatic Deploys** and **Manual Deploy**. Automatic deploys all for heruko to update your app everytime your GitHub is updated.
-6. Choose your deployment option and the branch from which you would like to deploy.
-7. If **Automatic deploys** is chosen, click on **Enable Automatic Deploys**. If **Manual deploy** chosen, click on **Deploy Branch**.
-8. Heruko should now start the deployment process. Once successfully deployed, a message will appear saying **Your app was successfully deployed.** with a button to view your deployed application.
-
-### GitHub
+### Development
 
 #### Forking GitHub Repository
 
@@ -239,12 +215,44 @@ Cloning allows you to download a local version of a chosen repository. Cloning c
 5. Open your chosen IDE and ensure Git is installed.
 5. In your IDE terminal type **git clone (url link that you copied)** and hit enter.
 
+As the `requests` function is imported in this project, it is necessary to install requests in your IDE. To do this simply enter `pip3 install -r requirements.txt` into the IDE terminal. This command will install any functionality contained within the `requirements.txt` file.
+
+*Disclaimer: Please check Python documentation for the correct terminal command as it may differ depending on the system you are using*
+
+### Deployment
+
+This project was deployed using [Heroku](https://www.heroku.com "Heroku") by following the steps detailed below.
+
+1. Navigate to Heruko website and sign up or log in.
+2. Navigate to your dashboard, select **New** and then **Create New App**.
+3. Assign a unique name to your project, select your region and click **Create app**.
+4. Navigate to **Settings** tab.
+5. In order to use the CodeInstitute mock terminal template, a config var must be added. This is done by clicking on **Reveal Config Vars**, inputting **PORT** for the key and **8000** for the value.
+6. Click **Add Buildpack** and add packs **Python** and **NodeJS** in that order. If done correctly **Python** should be first (top) and **NodeJS** second (bottom).
+
+#### Deploying from a Github Repository
+
+1. Navigate to **Deploy** tab.
+2. Select **GitHub - Connect** for deployment method and connect your GitHub account by logging in with your GitHub details in the prompt.
+3. Select your GitHub account from the dropdown list if not already preselected.
+4. Search for your GitHub repository that you would like to deploy and click **Connect** on the respository in the search list.
+5. Deployment options are found further down the **Deploy** tab with options for **Automatic Deploys** and **Manual Deploy**. Automatic deploys all for heruko to update your app everytime your GitHub is updated.
+6. Choose your deployment option and the branch from which you would like to deploy.
+7. If **Automatic deploys** is chosen, click on **Enable Automatic Deploys**. If **Manual deploy** chosen, click on **Deploy Branch**.
+8. Heruko should now start the deployment process. Once successfully deployed, a message will appear saying **Your app was successfully deployed.** with a button to view your deployed application.
+
+
+
 ## Libraries Used
 
 * The **requests** library was imported to allow for use of API to fetch list of words.
 * The **random** library was imported to randomise the word selection from the list of words.
 
 ## Credits
+
+[CodeInstitute](https://codeinstitute.net/ "Code Institute") for the template for the project and all the fantastic course material.
+
+The general idea came from this [tutorial](https://www.youtube.com/watch?v=m4nEnsavl6w&t=463s&ab_channel=Kite) by YouTube channel [Kite](https://www.youtube.com/@KiteHQ).
 
 API used for word list, from [random-word-api](http://random-word-api.herokuapp.com/home "random-word-api").
 
