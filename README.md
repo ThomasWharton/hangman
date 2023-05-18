@@ -162,13 +162,16 @@ To validate all code used in this project, each file was evaluated using the [CI
 
 Errors regarding line length was present for some files but upon searching for this error in google, it was determined that this error
 could be ignored as they do not impact on the functionality of the code. The reason this error occurs is due to PEP8 requiring line lengths
-to have a limit of 79 characters to not impede readability of your code.
+to have a limit of 79 characters to not impede readability of your code. The linter is told to ignore this error by inserting `# noqa` at the end of the line of code.
 
 *run.py Validation*<br>
 ![run.py Validation](docs/screenshots/run-file-validation.png)
 
 *game.py Validation*<br>
 ![game.py Validation](docs/screenshots/game-file-validation.png)
+
+*game.py Validation Clear*<br>
+![game.py Validation Clear](docs/screenshots/game-file-validation-clear.png)
 
 *init.py Validation*<br>
 ![init.py Validation](docs/screenshots/init-file-validation.png)
@@ -179,8 +182,14 @@ to have a limit of 79 characters to not impede readability of your code.
 *welcome.py Validation*<br>
 ![welcome.py Validation](docs/screenshots/welcome-file-validation.png)
 
+*welcome.py Validation Clear*<br>
+![welcome.py Validation Clear](docs/screenshots/welcome-file-validation-clear.png)
+
 *words.py Validation*<br>
 ![words.py Validation](docs/screenshots/words-file-validation.png)
+
+*words.py Validation Clear*<br>
+![words.py Validation Clear](docs/screenshots/words-file-validation-clear.png)
 
 ### Bugs
 
