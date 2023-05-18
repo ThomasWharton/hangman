@@ -36,7 +36,7 @@ def start_game(word):
         guess = input("Guess a letter or a word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in letters_guessed:
-                print(f"Sorry! You already guessed the letter {guess}. Please try again.")
+                print(f"Sorry! You already guessed the letter {guess}. Please try again.")  # noqa
             elif guess not in word:
                 print(f"Unlucky! {guess} is not in the word.")
                 lives -= 1
@@ -45,7 +45,7 @@ def start_game(word):
                 print(f"Well Done! {guess} is in the word")
                 letters_guessed.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
+                indices = [i for i, letter in enumerate(word) if letter == guess]  # noqa
                 for index in indices:
                     word_as_list[index] = guess
                 word_completion = "".join(word_as_list)
@@ -54,7 +54,7 @@ def start_game(word):
 
         elif len(guess) == len(word) and guess.isalpha():
             if guess in words_guessed:
-                print(f"Sorry! You already guessed the word {guess}. Please try again.")
+                print(f"Sorry! You already guessed the word {guess}. Please try again.")  # noqa
             elif guess != word:
                 print(f"Unlucky! {guess} is not the word!")
                 lives -= 1
@@ -73,8 +73,8 @@ def start_game(word):
         print(f"Words guessed: {words_guessed}", "\n")
 
     if guessed_correctly:
-        print("Congratulations! You guessed the word correctly and saved this poor man's life!\n")
+        print("Congratulations! You guessed the word correctly and saved this poor man's life!\n")  # noqa
     else:
-        print(f"Commiserations! You ran out of lives and the poor man has been hanged!\nThe word was {word}!\n")
+        print(f"Commiserations! You ran out of lives and the poor man has been hanged!\nThe word was {word}!\n")  # noqa
 
     restart_game()

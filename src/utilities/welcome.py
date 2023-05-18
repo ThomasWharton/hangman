@@ -23,11 +23,11 @@ def welcome():
     )
 
     while not accepted_username:
-        print("Username must be between 1 and 10 characters\nand only contain letters from the English Alphabet.\n")
+        print("Username must be between 1 and 10 characters\nand only contain letters from the English Alphabet.\n")  # noqa
         username = input("Please enter a username: ").capitalize()
 
         if len(username) in range(1, 11) and username.isalpha():
             accepted_username = True
             return username
         else:
-            print("The username entered does not meet requirements. Please try again.\n")
+            print("The username entered does not meet requirements. Please try again.\n")  # noqa
